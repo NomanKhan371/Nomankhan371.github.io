@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #usrform{
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: rgb(220, 220, 248);
+            margin-top: 40px;
+            width: 470px;
+        
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .three {
+            width: 130px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        .inner{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        button{
+            margin-left: 94px;
+            width: 50%;
+          
+            
+        }
+        button:hover{
+            background-color: rgb(186, 140, 207);
+            color: white;
+            border-radius: 20px;
+        }
+    </style>
+       
+
+</head> 
+<body>
+     
+    <div class="container">
+        <form  action="dashboard1.html" id="usrform">
+         <div class="inner">   
+            <h3>Sign Up </h3>
+             
+            <input class="three" type="text" name="firstName" id="firstName" placeholder="FirstName" >
+            <input class="three" type="text" name="middlename" id="middleName" placeholder="MiddleName">
+            <input class="three" type="text" name="lastName" id="lastName" placeholder="LastName">
+            
+            <br><br>
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" ><br><br>
+            <label for="confirmPassword">Confirm Password : </label>
+            <input type="password" name="confirmPassword" id="confirmPassword"><br><br>
+            <label for="age">Age : </label>
+            <input type="number" name="age" id="age">
+            <br><br>
+            
+                <label for="city">City : </label>
+                <select  name="city" id="1">
+                    <option active>--Select City--</option>
+                    <option>Delhi</option>
+                    <option>Aurangabad</option>
+                    <option>Mumbai</option>
+                    <option>Bangaluru</option>
+                </select><br><br>
+            
+            
+                <label for="Hobbies">Hobbies : </label>
+                <input type="checkbox" name="VideoGames" id="VideoGames">
+                <label for="VideoGames">Video Games</label>
+
+                <input type="checkbox" name="Eating" id="Eating">
+                <label for="Eating">Eating</label>
+
+                <input type="checkbox" name="Sleeping" id="Sleeping">
+                <label for="Sleeping">Sleeping</label>
+
+                <input type="checkbox" name="Movies" id="Movies">
+                <label for="Movies">Movies</label>
+        
+            
+            <br><br>
+            <label for="gender">Gender : </label>
+
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label><br><br>
+
+            <textarea rows="4" cols="50" name="comment" form="usrform">
+                Enter text here...</textarea><br><br>
+
+            <label for="uploadpicture">Upload Profile Picture : </label>
+            <input type="file" name="upload" id="upload">
+            <br><br>
+
+            <button><h3>Submit</h3></button><br><br>
+        </div>
+        </form>
+        
+        
+    </div>
+</body>
+</html>
